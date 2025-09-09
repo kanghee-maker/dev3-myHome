@@ -21,12 +21,13 @@ export default function WeatherWidget() {
       try {
         setLoading(true);
         
-        // 안양시 동안구 관양동의 좌표
-        const lat = 37.3889;
-        const lon = 126.9578;
+        // 안양시 동안구 관양동의 좌표 (실제 API 사용 시 필요)
+        // const lat = 37.3889;
+        // const lon = 126.9578;
         
         // 실제 구현 시에는 환경변수를 사용하세요
         // const API_KEY = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
+        // const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric&lang=kr`);
         
         // API 키가 없는 경우 더미 데이터 사용
         const dummyWeather: WeatherData = {

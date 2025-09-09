@@ -8,7 +8,7 @@ export default function Home() {
       {/* 헤더 */}
       <header className="text-center py-8">
         <h1 className="text-4xl font-bold text-gray-800 mb-2">
-          🏠 KangHee's Home
+          🏠 KangHee&apos;s Home
         </h1>
         <p className="text-gray-600">강희의 개인 대시보드</p>
       </header>
@@ -30,7 +30,7 @@ export default function Home() {
       {/* 푸터 */}
       <footer className="text-center py-6 text-gray-500 text-sm">
         <p>Made with ❤️ using Next.js & Tailwind CSS</p>
-        <p className="mt-1">© {new Date().getFullYear()} KangHee's Home</p>
+        <p className="mt-1">© {new Date().getFullYear()} KangHee&apos;s Home</p>
       </footer>
     </div>
   );

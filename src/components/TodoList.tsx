@@ -22,7 +22,7 @@ export default function TodoList() {
       try {
         const parsedTodos = JSON.parse(savedTodos);
         // Date 객체 복원
-        const todosWithDates = parsedTodos.map((todo: any) => ({
+        const todosWithDates = parsedTodos.map((todo: Omit<Todo, 'createdAt'> & { createdAt: string }) => ({
           ...todo,
           createdAt: new Date(todo.createdAt)
         }));
